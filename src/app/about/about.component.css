@@ -1,0 +1,56 @@
+@media only screen and (max-width: 550px) {
+    .mat-card-container {
+        width: 100%;
+    }
+    mat-card {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+img {
+    max-width: 400px;
+    height: 500px;
+    border-radius: 50%;
+}
+
+.about-box {
+    max-width: 800px;
+    min-height: 450px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.about-bill-paragraphs {
+    line-height: 26px;
+    width: 65%;
+}
+
+mat-icon {
+    font-size: 100px;
+    margin-left: -70px;
+}
+
+.cert-list {
+    text-align: left;
+    width: 75%;
+    margin: auto;
+    /* background-color: rgba(255,64,129,.2); */
+    background-color: rgba(63, 81, 181, .2);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 550px) {
+    .cert-list {
+        width: 100%;
+    }
+}
+
+.about-sub-header {
+    text-align: center;
+    text-decoration: underline;
+}

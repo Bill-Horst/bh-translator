@@ -1,0 +1,38 @@
+<h1 class="app-page-heading">{{ introHeader }}</h1>
+<hr />
+
+<section fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="20px">
+  <!-- <p>{{ introParagraph }}</p> -->
+  <div fxLayout.md="row wrap" fxLayout.lt-md="column" fxLayoutAlign="center center" fxLayoutGap="10px" class="mat-card-container">
+    <mat-card class="about-box">
+      <div fxLayout="row" fxLayoutAlign="center center" fxLayout.lt-md="column" fxLayoutGap="30px">
+        <img src="../../assets/images/bill_pic_bw.jpg" />
+        <!-- <img src="../../assets/images/tree_circuit.jpg" /> -->
+        <div class="about-bill-paragraphs">
+          <p>{{ billIntroP1 }}</p>
+          <p>{{ billIntroP2 }}</p>
+          <p>{{ billIntroP3 }}</p>
+          <p>{{ billIntroP4 }}</p>
+        </div>
+      </div>
+      <div class="cert-list">
+        <h2 class="about-sub-header">Certifications</h2>
+        <mat-list>
+          <a mat-list-item *ngFor="let cert of certs" href="{{ cert.linkRef }}" target="_blank">
+            <img matListAvatar src="../../assets/images/{{ cert.imagePath }}" alt="image of {{ cert.name }}">
+            <h3 matLine> {{ cert.name }} </h3>
+          </a>
+        </mat-list>
+      </div>
+      <div class="cert-list">
+          <h2 class="about-sub-header">Memberships</h2>
+          <mat-list>
+            <a mat-list-item *ngFor="let mem of memberships" href="{{ mem.linkRef }}" target="_blank">
+              <img matListAvatar src="../../assets/images/{{ mem.imagePath }}" alt="image of {{ mem.name }}">
+              <h3 matLine> {{ mem.name }} </h3>
+            </a>
+          </mat-list>
+        </div>
+    </mat-card>
+  </div>
+</section>
