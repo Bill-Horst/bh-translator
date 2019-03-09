@@ -25,6 +25,7 @@ export class SidenavListComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.languageSubscription = this.languageService.triggerLanguageChange.subscribe((language: string) => {
       this.setTranslations(language);
+      this.language = language;
     });
     this.setTranslations(this.language);
   }

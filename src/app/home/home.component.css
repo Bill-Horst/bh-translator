@@ -10,7 +10,7 @@
     padding: 1px 0px 15px 0px;
     font-family: 'Times New Roman';
     letter-spacing: 2px;
-    line-height: 20px;
+    line-height: 24px;
     text-align: center;
     /* color: rgb(255,64,129); */
     color: rgb(63, 81, 181);
@@ -21,12 +21,25 @@
 
 .home-service-jumbotron-text h1 {
     font-size: 50px;
-    line-height: 40px;
+    line-height: 44px;
 }
 
 .home-service-jumbotron-text mat-icon {
     position: relative;
     top: 3px;
+}
+
+@media only screen and (max-width: 550px) {
+    .home-service-jumbotron-text h1 {
+        font-size: 34px;
+        line-height: 32px;
+    }
+    .home-service-jumbotron-text {
+        padding: 1px 0px 15px 0px;
+        letter-spacing: 1px;
+        line-height: 24px;
+        top: 15%;
+    }
 }
 
 .home-services-paragraph {
@@ -50,4 +63,9 @@ button {
     font-size: 32pt;
     height: 75px;
     width: 260px;
+}
+
+/*  ...  */
+.nowrap {
+    white-space: nowrap;
 }

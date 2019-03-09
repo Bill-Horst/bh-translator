@@ -55,6 +55,8 @@ export class AboutComponent implements OnInit, OnDestroy {
   ]
 
   introHeader;
+  certHeader;
+  memHeader;
   billIntroP1;
   billIntroP2;
   billIntroP3;
@@ -64,6 +66,7 @@ export class AboutComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.languageSubscription = this.languageService.triggerLanguageChange.subscribe((language: string) => {
       this.setTranslations(language);
+      this.language = language;
     });
     this.setTranslations(this.language);
   }
@@ -71,6 +74,8 @@ export class AboutComponent implements OnInit, OnDestroy {
   setTranslations(language: string) {
     let langTrans = this.translations[language];
     this.introHeader = langTrans.introHeader;
+    this.certHeader = langTrans.certHeader;
+    this.memHeader = langTrans.memHeader;
     this.billIntroP1 = langTrans.billIntroP1;
     this.billIntroP2 = langTrans.billIntroP2;
     this.billIntroP3 = langTrans.billIntroP3;
@@ -79,15 +84,19 @@ export class AboutComponent implements OnInit, OnDestroy {
   private translations: {} = {
     english: {
       introHeader: 'Meet Bill',
+      certHeader: 'Certifications',
+      memHeader: 'Memberships',
       billIntroP1: 'Bill was born and raised in the United States and grew up multilingual. He moved to Japan in 2009 where he learned Japanese at work and began freelance translating professionally.',
       billIntroP2: 'He moved back to the United States in 2015 where he works as a software engineer, a tech writer, and freelance Japanese to English translator.',
       billIntroP3: 'He holds a handful of certifications ranging from programming languages to cloud technologies.'
     },
     japanese: {
       introHeader: 'ビルの紹介',
-      billIntroP1: 'JJJ Bill was born and raised in the United States and grew up multilingual. On a whim, he moved to Japan and started studying Japanese, where he quickly improved and became a Japanese to English translator.',
-      billIntroP2: 'JJJ He moved back to the United States in 2015 where he works as a software engineer and freelance Japanese to English translator.',
-      billIntroP3: 'JJJ He has technology certifications ranging from back end to front end programming languages to the cloud.'
+      certHeader: '資格',
+      memHeader: 'メンバーシップ',
+      billIntroP1: 'ビルはアメリカで生まれ多言語の生活して育ちました。２００９年に気まぐれに日本に引っ越して日本語の勉強初めて、フリーランス翻訳の仕事をした。',
+      billIntroP2: '２０１５年にアメリカへ戻って今ソフトエアーエンジニアとテックのライターとフリーランスの日英翻訳者として働いています。',
+      billIntroP3: 'プログラミングの言語からクラウドのテックまでの資格を持っています。'
     }
   }
 

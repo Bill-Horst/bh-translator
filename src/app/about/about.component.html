@@ -16,7 +16,7 @@
         </div>
       </div>
       <div class="cert-list">
-        <h2 class="about-sub-header">Certifications</h2>
+        <h2 class="about-sub-header">{{ certHeader }}</h2>
         <mat-list>
           <a mat-list-item *ngFor="let cert of certs" href="{{ cert.linkRef }}" target="_blank">
             <img matListAvatar src="../../assets/images/{{ cert.imagePath }}" alt="image of {{ cert.name }}">
@@ -25,7 +25,7 @@
         </mat-list>
       </div>
       <div class="cert-list">
-          <h2 class="about-sub-header">Memberships</h2>
+          <h2 class="about-sub-header">{{ memHeader }}</h2>
           <mat-list>
             <a mat-list-item *ngFor="let mem of memberships" href="{{ mem.linkRef }}" target="_blank">
               <img matListAvatar src="../../assets/images/{{ mem.imagePath }}" alt="image of {{ mem.name }}">

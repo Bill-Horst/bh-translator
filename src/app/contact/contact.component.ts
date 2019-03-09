@@ -21,6 +21,7 @@ export class ContactComponent implements OnInit {
   ngOnInit() {
     this.languageSubscription = this.languageService.triggerLanguageChange.subscribe((language: string) => {
       this.setTranslations(language);
+      this.language = language;
     });
     this.setTranslations(this.language);
   }
@@ -45,7 +46,7 @@ export class ContactComponent implements OnInit {
       phoneHeader: 'Phone'
     },
     japanese: {
-      contactHeader: 'JJJ Get in Touch!!',
+      contactHeader: '連絡先',
       emailHeader: 'メール',
       addressHeader: '住所',
       phoneHeader: '電話'
