@@ -9,7 +9,7 @@ import { Subscription } from 'rxjs/Subscription';
 })
 export class SidenavListComponent implements OnInit, OnDestroy {
 
-  private language: string = this.languageService.getLanguage();
+  language: string = this.languageService.getLanguage();
   languageSubscription: Subscription;
 
   homeNav: string;

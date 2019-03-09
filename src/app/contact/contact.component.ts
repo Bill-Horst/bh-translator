@@ -8,7 +8,7 @@ import { LanguageService } from '../services/language.service';
 })
 export class ContactComponent implements OnInit {
 
-  private language: string = this.languageService.getLanguage();
+  language: string = this.languageService.getLanguage();
   languageSubscription: any;
 
   contactHeader;
@@ -40,13 +40,13 @@ export class ContactComponent implements OnInit {
 
   private translations: {} = {
     english: {
-      contactHeader: 'Get in Touch!',
+      contactHeader: 'Contact Bill Horst - Tech Translator',
       emailHeader: 'Email',
       addressHeader: 'Address',
       phoneHeader: 'Phone'
     },
     japanese: {
-      contactHeader: '連絡先',
+      contactHeader: 'ホーストビル・テックの翻訳者の連絡先',
       emailHeader: 'メール',
       addressHeader: '住所',
       phoneHeader: '電話'

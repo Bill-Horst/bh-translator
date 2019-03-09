@@ -11,7 +11,7 @@ import { Membership } from './membership.model';
 })
 export class AboutComponent implements OnInit, OnDestroy {
 
-  private language: string = this.languageService.getLanguage();
+  language: string = this.languageService.getLanguage();
   languageSubscription: Subscription;
 
   certs: Certification[] = [
@@ -83,7 +83,7 @@ export class AboutComponent implements OnInit, OnDestroy {
 
   private translations: {} = {
     english: {
-      introHeader: 'Meet Bill',
+      introHeader: 'Meet Bill - Tech Translator',
       certHeader: 'Certifications',
       memHeader: 'Memberships',
       billIntroP1: 'Bill was born and raised in the United States and grew up multilingual. He moved to Japan in 2009 where he learned Japanese at work and began freelance translating professionally.',
@@ -91,7 +91,7 @@ export class AboutComponent implements OnInit, OnDestroy {
       billIntroP3: 'He holds a handful of certifications ranging from programming languages to cloud technologies.'
     },
     japanese: {
-      introHeader: 'ビルの紹介',
+      introHeader: 'ビル・テックの翻訳者の紹介',
       certHeader: '資格',
       memHeader: 'メンバーシップ',
       billIntroP1: 'ビルはアメリカで生まれ多言語の生活して育ちました。２００９年に気まぐれに日本に引っ越して日本語の勉強初めて、フリーランス翻訳の仕事をした。',
