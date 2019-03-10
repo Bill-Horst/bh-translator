@@ -54,10 +54,10 @@ export class HeaderComponent implements OnInit, OnDestroy {
       ratesNav: 'Rates'
     },
     japanese: {
-      contactNav: '問い合わせた',
-      aboutNav: '自己紹介',
+      contactNav: 'お問い合わせ',
+      aboutNav: '翻訳者の紹介',
       workNav: 'ワーク',
-      ratesNav: '値段'
+      ratesNav: 'お値段'
     }
   }
 

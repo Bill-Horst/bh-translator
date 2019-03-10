@@ -46,7 +46,7 @@ export class ContactComponent implements OnInit {
       phoneHeader: 'Phone'
     },
     japanese: {
-      contactHeader: 'ホーストビル・テックの翻訳者の連絡先',
+      contactHeader: 'ホースト　ビル・IT翻訳者の連絡先',
       emailHeader: 'メール',
       addressHeader: '住所',
       phoneHeader: '電話'

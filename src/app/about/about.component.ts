@@ -91,12 +91,12 @@ export class AboutComponent implements OnInit, OnDestroy {
       billIntroP3: 'He holds a handful of certifications ranging from programming languages to cloud technologies.'
     },
     japanese: {
-      introHeader: 'ビル・テックの翻訳者の紹介',
+      introHeader: 'IT翻訳者ビルの紹介',
       certHeader: '資格',
       memHeader: 'メンバーシップ',
-      billIntroP1: 'ビルはアメリカで生まれ多言語の生活して育ちました。２００９年に気まぐれに日本に引っ越して日本語の勉強初めて、フリーランス翻訳の仕事をした。',
-      billIntroP2: '２０１５年にアメリカへ戻って今ソフトエアーエンジニアとテックのライターとフリーランスの日英翻訳者として働いています。',
-      billIntroP3: 'プログラミングの言語からクラウドのテックまでの資格を持っています。'
+      billIntroP1: 'ビルはアメリカ合衆国で生まれ多言語環境で育ちました。2009年に日本に移住して日本語を学び、フリーランス翻訳者として活躍。',
+      billIntroP2: '2015年にアメリカへ帰国し、ソフトウェアエンジニアをしながらITライター兼フリーランスの日英翻訳者として活動。',
+      billIntroP3: 'プログラミング言語からクラウド関連テクノロジーまでの資格取得済。'
     }
   }
 

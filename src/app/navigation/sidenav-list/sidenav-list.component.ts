@@ -19,7 +19,7 @@ export class SidenavListComponent implements OnInit, OnDestroy {
   ratesNav: string;
 
   @Output() closeSidenav = new EventEmitter<void>();
-  
+
   constructor(private languageService: LanguageService) { }
 
   ngOnInit() {
@@ -58,10 +58,10 @@ export class SidenavListComponent implements OnInit, OnDestroy {
     },
     japanese: {
       homeNav: 'ホーム',
-      contactNav: '問い合わせた',
-      aboutNav: '自己紹介',
+      contactNav: 'お問い合わせ',
+      aboutNav: '翻訳者の紹介',
       workNav: 'ワーク',
-      ratesNav: '値段'
+      ratesNav: 'お値段'
     }
   }
 

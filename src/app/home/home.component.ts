@@ -13,7 +13,6 @@ export class HomeComponent implements OnInit, OnDestroy {
   languageSubscription: Subscription;
 
   homeHeader;
-  servicesHeader;
   servicesHeaderTop;
   servicesHeaderBottom;
   servicesP1;
@@ -41,7 +40,6 @@ export class HomeComponent implements OnInit, OnDestroy {
     let langTrans = this.translations[language];
 
     this.homeHeader = langTrans.homeHeader;
-    this.servicesHeader = langTrans.servicesHeader;
     this.servicesHeaderTop = langTrans.servicesHeaderTop;
     this.servicesHeaderBottom = langTrans.servicesHeaderBottom;
     this.servicesP1 = langTrans.servicesP1;
@@ -59,12 +57,11 @@ export class HomeComponent implements OnInit, OnDestroy {
   private translations: {} = {
     english: {
       homeHeader: 'Bill Horst',
-      servicesHeader: 'Japanese to English Tech Translations',
       servicesHeaderTop: 'Japanese to English',
       servicesHeaderBottom: 'Tech Translations',
       servicesP1: 'Japanese to English translation services on topics having to do with all things technology',
+      servicesP3: 'General topic translations, editing / proofreading, and English transcription services also offered',
       servicesP2: 'All translation work done by a native English speaker from Japanese to English',
-      servicesP3: 'Editing / proofreading and English transcription services also offered',
       yijHeader: 'Years Living/Working in Japan',
       techExpHeader: 'Years of Tech Industry Experience',
       transExpHeader: 'Years of Translation Experience',
@@ -74,20 +71,19 @@ export class HomeComponent implements OnInit, OnDestroy {
       contactButton: 'Contact'
     },
     japanese: {
-      homeHeader: 'ホーストビル',
-      servicesHeader: '日→英テックの翻訳サービス',
-      servicesHeaderTop: '日→英テックの',
-      servicesHeaderBottom: '翻訳サービス',
-      servicesP1: 'テックの全てについての日本語から英語の翻訳サービス',
-      servicesP2: '日→英翻訳の全ては英語のネイティブスピーカーがやります',
-      servicesP3: '書類の編集も英語の採録サービスも提供しています',
-      yijHeader: '日本での生活と仕事の長年の経験',
-      techExpHeader: '技術業界での長年の経験',
+      homeHeader: 'ホースト　ビル',
+      servicesHeaderTop: '日→英',
+      servicesHeaderBottom: '情報技術翻訳サービス',
+      servicesP1: 'IT関連の日本語から英語への翻訳。',
+      servicesP2: '日→英翻訳は全て英語のネイティブスピーカーが担当。',
+      servicesP3: '一般翻訳・添削・校正・英語のトランスクリプション（テープ起こし）も致します。',
+      yijHeader: '日本での長年の生活と仕事を通して得られた経験',
+      techExpHeader: 'IT業界での長年の経験',
       transExpHeader: '翻訳業界での長年の経験',
-      yijP1: '6年間以上日本に住んで働いていることで、日本語と日本文化のニュアンスについて非常に貴重な洞察が得られます',
-      techExpP1: 'ITサービスからソフトウェアエンジニアリング、テスト、そしてIoTやクラウドサービスに至るまでの長年のテクノロジー業界での経験を通して得られた大規模なテクノロジー関連の語彙',
-      transExpP1: 'ビデオサブタイトルから政府文書、モバイルゲームのローカライゼーションまで、日米両国の企業向けの一般および技術翻訳の4年間の経験',
-      contactButton: '問い合わせ'
+      yijP1: '6年以上日本に在住し、就業することで得られた日本文化と日本語のニュアンスについての貴重な理解',
+      techExpP1: 'ITサービスからソフトウェアエンジニアリング、テスティング、そしてIoTやクラウドサービスに至るまでの長年のテクノロジー業界での経験を通して得た膨大なテクノロジー関連の用語に対しての理解',
+      transExpP1: '動画の字幕から公文書、モバイルゲームのローカライゼーションまで、日米両国の企業向けの一般および技術翻訳。翻訳経験４年。',
+      contactButton: 'お問い合わせ'
     }
   }
 
