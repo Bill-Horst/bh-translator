@@ -42,15 +42,15 @@ export class AboutComponent implements OnInit, OnDestroy {
   ];
 
   memberships: Membership[] = [
-    {
-      name: 'American Translators Association',
-      imagePath: 'ata_image.jpg',
-      linkRef: 'https://education.oracle.com/java-se-8-programmer-i/pexam_1Z0-808'
-    },
+    // {
+    //   name: 'American Translators Association',
+    //   imagePath: 'ata_image.jpg',
+    //   linkRef: 'https://www.atanet.org/'
+    // },
     {
       name: 'Colorado Translators Association',
       imagePath: 'cta_image.png',
-      linkRef: 'https://education.oracle.com/java-se-8-programmer-i/pexam_1Z0-808'
+      linkRef: 'https://cta-web.org/'
     }
   ]
 
