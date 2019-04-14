@@ -1,0 +1,11 @@
+<div mat-dialog-content>
+  <pdf-viewer [src]="'../../assets/images/Translator_Resume.pdf'" 
+              [render-text]="false"
+              style="display: block;"
+              [fit-to-page]="true"
+              [original-size]="true"
+  ></pdf-viewer>
+</div>
+<div mat-dialog-actions>
+  <button mat-button color="accent" [mat-dialog-close]="true" cdkFocusInitial>Close</button>
+</div>

@@ -15,12 +15,13 @@ export class AboutComponent implements OnInit, OnDestroy {
   languageSubscription: Subscription;
 
   certs: Certification[] = [
-    {
-      name: 'JLPT N2',
-      date: '2013',
-      imagePath: 'jlpt_image.png',
-      linkRef: 'https://www.jlpt.jp/e/'
-    },
+    // uncomment this code after passing the N1
+    // {
+    //   name: 'JLPT N1',
+    //   date: '2019',
+    //   imagePath: 'jlpt_image.png',
+    //   linkRef: 'https://www.jlpt.jp/e/'
+    // },
     {
       name: 'Microsoft - Programming in HTML5 with JavaScript and CSS3',
       date: '2017',
@@ -34,7 +35,7 @@ export class AboutComponent implements OnInit, OnDestroy {
       linkRef: 'https://aws.amazon.com/certification/certified-developer-associate/'
     },
     {
-      name: 'Java SE 8 Programmer I',
+      name: 'Java SE 8 Programmer',
       date: '2017',
       imagePath: 'oracle_image.png',
       linkRef: 'https://education.oracle.com/java-se-8-programmer-i/pexam_1Z0-808'

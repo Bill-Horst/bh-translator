@@ -1,15 +1,17 @@
 <mat-sidenav-container style="background-color: rgba(248, 246, 255, 0.97)">
-  <!-- <mat-sidenav-container> -->
-      <mat-sidenav #sidenav position="end" role="navigation">
-          <app-sidenav-list (closeSidenav)="sidenav.close()"></app-sidenav-list>
-      </mat-sidenav>
-      <mat-sidenav-content>
-          <app-header (sidenavToggle)="sidenav.toggle()"></app-header>
-          <main>
-              <router-outlet></router-outlet>
-          </main>
-      </mat-sidenav-content>
-  </mat-sidenav-container>
-  <footer fxLayout fxLayoutAlign="end end">
-      <span>{{ copyrightMessage }}</span>
-  </footer>
+    <!-- <mat-sidenav-container> -->
+    <mat-sidenav #sidenav position="end" role="navigation">
+        <app-sidenav-list (closeSidenav)="sidenav.close()"></app-sidenav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <app-header (sidenavToggle)="sidenav.toggle()"></app-header>
+        <main>
+            <router-outlet></router-outlet>
+        </main>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+<footer fxLayout fxLayoutAlign="end end">
+    <span>{{ copyrightMessage }}</span>
+</footer>
+
+<a class="ribbon resume-ribbon" (click)="openResumeDialog()">{{ resumeRibbon }}</a>

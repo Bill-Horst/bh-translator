@@ -11,6 +11,8 @@ import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.com
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { ResumeModalComponent } from './resume-modal/resume-modal.component';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 @NgModule({
   declarations: [
@@ -19,16 +21,19 @@ import { ContactComponent } from './contact/contact.component';
     SidenavListComponent,
     HomeComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    ResumeModalComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MaterialModule,
     BrowserAnimationsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    PdfViewerModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [ResumeModalComponent]
 })
 export class AppModule { }

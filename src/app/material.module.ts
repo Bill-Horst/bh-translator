@@ -11,7 +11,8 @@ import {
     MatProgressSpinnerModule,
     MatCardModule,
     MatMenuModule,
-    MatTableModule
+    MatTableModule,
+    MatDialogModule
 } from '@angular/material';
 import { MatGridListModule } from '@angular/material/grid-list';
 
@@ -29,7 +30,8 @@ import { MatGridListModule } from '@angular/material/grid-list';
         MatCardModule,
         MatMenuModule,
         MatTableModule,
-        MatGridListModule
+        MatGridListModule,
+        MatDialogModule
     ],
     exports: [
         MatButtonModule,
@@ -44,7 +46,8 @@ import { MatGridListModule } from '@angular/material/grid-list';
         MatCardModule,
         MatMenuModule,
         MatTableModule,
-        MatGridListModule
+        MatGridListModule,
+        MatDialogModule
     ]
 })
 
