@@ -43,11 +43,11 @@ export class AboutComponent implements OnInit, OnDestroy {
   ];
 
   memberships: Membership[] = [
-    // {
-    //   name: 'American Translators Association',
-    //   imagePath: 'ata_image.jpg',
-    //   linkRef: 'https://www.atanet.org/'
-    // },
+    {
+      name: 'American Translators Association',
+      imagePath: 'ata_image.jpg',
+      linkRef: 'https://www.atanet.org/'
+    },
     {
       name: 'Colorado Translators Association',
       imagePath: 'cta_image.png',
